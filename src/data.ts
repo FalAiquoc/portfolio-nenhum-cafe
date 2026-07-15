@@ -19,8 +19,8 @@ export const storeData: StoreData = {
     sunday: 'Domingo: 14:00 às 20:00 (Segunda: Fechado)',
   },
   colors: {
-    primaryHex: '#78350f', // Marrom Café Quente
-    accentHex: '#fbbf24',  // Dourado/Âmbar
+    primaryHex: '#3e2723', // Marrom Café Escuro
+    accentHex: '#fbbf24',  // Âmbar / Caramelo
   },
   typography: {
     displayFontFamily: 'Merriweather',
@@ -46,30 +46,42 @@ export const storeData: StoreData = {
   ],
   products: [
     {
-      id: 'prod-1',
-      name: 'Cafés Coados Especiais',
-      description: 'Extraídos com precisão nos métodos Hario V60 ou Aeropress, ressaltando as notas sensoriais dos grãos.',
-      price: 'A partir de R$ 9,00',
+      id: 'coffee-1',
+      name: 'Café Especial Coado Hario V60',
+      description: 'Café de grãos arábicas pontuados extraído no clássico filtro cônico de cerâmica, realçando acidez cítrica e notas florais limpas.',
+      price: 'R$ 9,90',
       iconName: 'Coffee',
       imageUrl: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600',
+      category: 'coados',
+      tag: 'Mais Pedido'
     },
     {
-      id: 'prod-2',
-      name: 'Cappuccino Italiano Cremoso',
-      description: 'Dose dupla de espresso, leite vaporizado com textura sedosa e finalizado com cacau belga em pó.',
-      price: 'R$ 13,50',
+      id: 'coffee-2',
+      name: 'Cappuccino Cremoso Italiano',
+      description: 'Dose dupla de espresso curto, leite vaporizado de textura super sedosa e polvilhado com cacau belga premium.',
+      price: 'R$ 13,90',
       iconName: 'Coffee',
       imageUrl: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600',
+      category: 'cremosos',
+      tag: 'Sucesso de Vendas'
     },
     {
-      id: 'prod-3',
-      name: 'Torta Red Velvet Premium',
-      description: 'Nossa famosa massa vermelha aveludada com recheio e cobertura cremosa de cream cheese e chocolate branco.',
-      price: 'R$ 17,90 a fatia',
+      id: 'coffee-3',
+      name: 'Torta Red Velvet Especial',
+      description: 'Massa vermelha aveludada recheada e coberta com a clássica receita cremosa à base de cream cheese e raspas de limão siciliano.',
+      price: 'R$ 17,95 a fatia',
       iconName: 'Cookie',
       imageUrl: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=600',
-    },
+      category: 'doces',
+      tag: 'Receita Secreta'
+    }
   ],
-  instagramUrl: 'https://instagram.com',
-  facebookUrl: 'https://facebook.com',
+  instagramUrl: 'https://www.instagram.com',
+  facebookUrl: 'https://www.facebook.com',
+  brands: [
+    { name: 'Fazenda Ninho do Café', desc: 'Grãos arábica 86+ pontos' },
+    { name: 'Hario Japan', desc: 'Métodos de filtragem de precisão' },
+    { name: 'Cacau Belga Callebaut', desc: 'Chocolates finos' },
+    { name: 'La Marzocco', desc: 'Máquina de espresso artesanal' }
+  ]
 };
