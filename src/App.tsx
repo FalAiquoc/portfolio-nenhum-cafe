@@ -2,24 +2,28 @@ import { useEffect, useState } from 'react';
 import { storeData } from './data';
 import { Icon } from './components/Icon';
 
-// Componente de Logotipo Vetorial Sofisticado (Xícara de cerâmica com espiral de vapor Hario V60 dourado e traços vintage)
+// Componente de Logotipo (Logo oficial por imagem ou Xícara de cerâmica vintage SVG como fallback)
 function Logo({ className = "h-10", dark = false }: { className?: string; dark?: boolean }) {
   const accentColor = '#fbbf24'; // Dourado/Caramelo
   const textColor = dark ? '#0F172A' : '#FFFFFF';
 
   return (
     <div className={`flex items-center space-x-2.5 ${className}`}>
-      <svg className="h-full aspect-square overflow-visible" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke={accentColor} strokeWidth="10" strokeLinecap="round">
-          {/* Xícara e Pires */}
-          <path d="M 40 90 C 40 140 140 140 140 90 Z" strokeWidth="14" />
-          <path d="M 140 90 C 170 90 170 120 140 120" strokeWidth="10" />
-          <path d="M 20 150 L 160 150" strokeWidth="12" />
-          {/* Espirais de vapor do café quente */}
-          <path d="M 70 70 Q 80 50 70 30" strokeWidth="8" />
-          <path d="M 110 70 Q 120 50 110 30" strokeWidth="8" />
-        </g>
-      </svg>
+      {storeData.logoUrl ? (
+        <img src={storeData.logoUrl} alt={storeData.name} className="h-8 w-auto object-contain rounded-md border border-amber-500/10" />
+      ) : (
+        <svg className="h-full aspect-square overflow-visible" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke={accentColor} strokeWidth="10" strokeLinecap="round">
+            {/* Xícara e Pires */}
+            <path d="M 40 90 C 40 140 140 140 140 90 Z" strokeWidth="14" />
+            <path d="M 140 90 C 170 90 170 120 140 120" strokeWidth="10" />
+            <path d="M 20 150 L 160 150" strokeWidth="12" />
+            {/* Espirais de vapor do café quente */}
+            <path d="M 70 70 Q 80 50 70 30" strokeWidth="8" />
+            <path d="M 110 70 Q 120 50 110 30" strokeWidth="8" />
+          </g>
+        </svg>
+      )}
       <div className="flex flex-col leading-[0.9] text-left font-display">
         <span className="text-xl font-black tracking-[0.05em] uppercase" style={{ color: textColor }}>NENHUM</span>
         <span className="text-[14px] font-black tracking-[0.25em]" style={{ color: accentColor }}>CAFÉ</span>

@@ -6,6 +6,7 @@ export const storeData: StoreData = {
   description: 'Um refúgio acolhedor em Natal. Grãos selecionados com torra fresca, espressos, coados especiais, tortas irresistíveis e o espaço ideal para ler, trabalhar ou conversar.',
   aboutText: 'O Nenhum Café surgiu com o desejo de criar um espaço onde o tempo passa mais devagar. Localizado em Lagoa Nova, nos dedicamos a servir cafés de altíssima qualidade (grãos 100% arábica pontuados), preparados com cuidado em diversos métodos. Nossa confeitaria artesanal produz doces e salgados diariamente para harmonizar perfeitamente com sua bebida preferida, num ambiente climatizado, com internet rápida e tomadas para seu coworking.',
   aboutImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200',
+  logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD1D1L8rD10t9583_D-sS90d2v-9e20084Lg&s',
   phone: '(84) 99888-2222',
   phoneFormatted: '84998882222',
   whatsappNumber: '5584998882222',
